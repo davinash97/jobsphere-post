@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Spring Boot-JobspherePostApplication<Jobsphere-Post>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "com.jobsphere.post.JobspherePostApplication",
+			"projectName": "Jobsphere-Post",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		}
+	]
+}
