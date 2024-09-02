@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
+/*
+ * Controller for managing Post-related operations.
+ * Provides endpoints for creating & reading posts.
+ */
+
 @RestController
 @RequestMapping("/{profile_id}/post")
 public class ProfilePostController {

@@ -86,6 +86,10 @@ public class PostService {
 			// retrieve existing data in post
 			var existingPost = read(post_id);
 
+			// Handle if profile ID matches
+			if(!profile_id.equals(existingPost.getProfile_id()))
+				return null;
+
 			// Handle if title is not null
 			if(title != null)
 				existingPost.setTitle(title);
@@ -135,7 +139,12 @@ public class PostService {
 			// check if the id exists in database.
 			if(postIdExists(post_id)) {
 
+				var post = read(post_id);
+
 				// if id exists then delete it
+				if(!profile_id.equals(post.getProfile_id()))
+					return false;
+
 				postRepository.deleteById(post_id);
 
 				// log the successful deletion

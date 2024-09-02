@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 /*
  * Controller for managing Post-related operations.
- * Provides endpoints for creating, reading, updating, and deleting posts.
+ * Provides endpoints for reading, updating, and deleting posts.
  */
 
 @RestController
